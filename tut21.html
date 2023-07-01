@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Itim', cursive;
+        }
+
+        .container {
+            width: 800px;
+            border: 4px solid grey;
+            background-color: sandybrown;
+            margin: auto;
+        }
+
+        .item {
+            border: 3px solid coral;
+            margin: 10px 8px;
+            padding: 5px;
+            background-color: rgb(219, 208, 208);
+        }
+
+        #fruit {
+            float: left;
+            width: 45%;
+        }
+
+        #computer {
+            float: right;
+            width: 50%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            width: 99%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 30px auto;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome in my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aspernatur
+                ipsum pariatur enim? Voluptate eos consequatur praesentium laudantium nemo provident in voluptas
+                sit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis repudiandae deleniti voluptatem
+                temporibus eius enim, fugiat dolorem vero voluptate dicta alias, impedit quam?Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Natus voluptate nam tempora laborum, necessitatibus expedita repellat
+                corporis et illo fugit!
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+                aspernatur ipsum pariatur enim? Voluptate eos consequatur praesentium laudantium nemo provident in
+                voluptas sit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatum labore ab
+                quia dicta nulla quae ullam. Hic officia nemo dolores error velit! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Tempora tenetur hic laborum repudiandae? Officia dolorum saepe libero
+                numquam sed dolore?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+                aspernatur ipsum pariatur enim? Voluptate eos consequatur praesentium laudantium nemo provident in
+                voluptas sit?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+                aspernatur ipsum pariatur enim? Voluptate eos consequatur praesentium laudantium nemo provident in
+                voluptas sit?</p>
+        </div>
+    </div>
+</body>
+
+</html>

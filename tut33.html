@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: turquoise;
+            color: #ffffff;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 3px 21px;
+            font-size: 25px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* (horizontally center) */
+            /* border: 2px solid red; */
+            padding: 10px 20px;
+            height: 300px;
+            justify-content: center;
+            /* vertically center */
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-family: 'Caveat', cursive;
+            font-size: 2rem;
+            text-align: center;
+            margin: 10px 30px;
+        }
+
+        /* section::before {
+            content: "This is content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to my first project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error ipsum vitae, magnam vero
+            sapiente hic repudiandae animi quia in quasi nostrum voluptatum quae necessitatibus aliquam obcaecati
+            explicabo non ipsa.</p>
+    </section>
+    <hr>
+</body>
+
+</html>
